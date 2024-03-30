@@ -29,13 +29,12 @@ pipeline {
         }
     }
     post {
-    success {
-        emailext(
-            to: 'axiomshah@gmail.com',
-            subject: 'Build Successful ',
-            body: 'The docker image successfully pushed to Dockerhub!Well Done!',
-        )
-    }
-}
-
+        success {
+            emailext(
+                to: 'axiomshah@gmail.com',
+                subject: 'Build Successful ',
+                body: 'The docker image successfully pushed to Dockerhub! Well Done!'
+            )
+        }
+    }
 }
