@@ -3,7 +3,7 @@ pipeline {
         registryCredential = 'AbdullahDockerCredentials'
         IMAGE_NAME = 'mianabdullah/mlops-assignment1'
         TAG = 'latest' 
-    }
+    }//hel
     agent any
     stages {
         stage('Cloning Git Repository') {
