@@ -6,7 +6,7 @@ app = Flask(__name__)
 # Load the trained model
 model = joblib.load("iris_model.pkl")
 
-# routes
+
 @app.route('/predict', methods=['POST'])
 def predict():
     if request.method == 'POST':
@@ -24,3 +24,6 @@ def predict():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
+# this is not comment
